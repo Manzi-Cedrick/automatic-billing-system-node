@@ -1,0 +1,39 @@
+{
+  "name": "billing-system",
+  "version": "1.0.0",
+  "description": "Build a custom application that will allow the employees of Artistic Interior Design to enter time",
+  "main": "src/main.ts",
+  "repository": "https://github.com/israelmanzi/billing-system.git",
+  "author": "israel_manzi <104481099+israelmanzi@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start:dev": "tsnd --respawn --transpile-only src/main.ts",
+    "start": "tsc && node build/main.js",
+    "build": "rm -rf build && tsc",
+    "lint": "eslint --ext .ts src/"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.13.0",
+    "argon2": "^0.30.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.7",
+    "prisma": "^4.13.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  }
+}
